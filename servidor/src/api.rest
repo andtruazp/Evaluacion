@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/libros
+
+###
+post http://localhost:3000/libros
+Content-Type: application/json
+
+{
+    "titulo":"Juan Salvdor Gviota",
+    "autor":"Richard Bach",
+    "editorial":"Ficción",
+    "edicion":30,
+    "clasificacion":"Desrrollo personal",
+    "estatus":"Disponible"
+}
+
+###
+GET http://localhost:3000/libros/6
+
+###
+DELETE http://localhost:3000/libros/7
+
+###
+PUT http://localhost:3000/libros/6
+Content-Type: application/json
+
+{
+    "titulo":"Juan Salvador Gaviota",
+    "clasificacion":"Desarrollo Personal",
+    "estatus":"Prestado"
+}
